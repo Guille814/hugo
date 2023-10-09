@@ -1,0 +1,6 @@
+<h1>Lista de mis alumnos</h1>
+<ul>
+    {{ range .Site.Data.mis_datos}}
+    <li>{{.nombre}} - {{.edad}}</li>
+    {{end}}
+</ul>

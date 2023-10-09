@@ -1,0 +1,59 @@
+languageCode="es-es"
+theme='relearn'
+title="LA UWU PAGINA"
+
+
+
+[module]
+  [module.hugoVersion]
+    min = "0.95.0"
+
+[mediaTypes]
+  [mediaTypes."text/javascript"]
+    suffixes = ["js"]
+
+[outputFormats]
+  [outputFormats.PRINT]
+    name= "PRINT"
+    baseName = "index.print"
+    isHTML = true
+    mediaType = 'text/html'
+    permalinkable = false
+    noUgly = true
+
+  [outputFormats.SEARCH]
+    name= "SEARCH"
+    baseName = "index.search"
+    isPlainText = true
+    mediaType = 'text/javascript'
+    permalinkable = false
+    noUgly = true
+
+  [outputFormats.SEARCHPAGE]
+    name= "SEARCHPAGE"
+    baseName = "search"
+    isHTML = true
+    mediaType = 'text/html'
+    permalinkable = false
+    noUgly = true
+
+[[menu.shortcuts]]
+name="<i class='fab fa-linkedin'></i>   Linkedin"
+identified=""
+url="https://es.linkedin.com/in/guillermo-ib%C3%A1%C3%B1ez-l%C3%A1zaro-792b79204"
+weight=1
+
+[[menu.shortcuts]]
+name="<i class='fas fa-fire'></i>  Maiz"
+identified=""
+url="https://cornhub.website"
+weight=2
+
+
+[[menu.shortcuts]]
+name="<i class='far fa-question-circle'></i>   Ejercicios resueltos"
+identified=""
+url="http://manuel.infenlaces.com/dwes/ejercicios/"
+weight=3
+
+
