@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.119.0">
+    <meta name="generator" content="Relearn 5.21.0+tip">
+    <meta name="description" content="">
+    <title>Markdown :: My New Hugo Site</title>
+    <link href="/images/logo.png?1696837586" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1696837586" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1696837586" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1696837586" rel="stylesheet">
+    <link href="/css/auto-complete.css?1696837586" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1696837586" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1696837586" rel="stylesheet">
+    <link href="/css/fonts.css?1696837586" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1696837586" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1696837586" rel="stylesheet">
+    <link href="/css/theme-pink.css?1696837586" rel="stylesheet" id="R-variant-style">
+    <link href="/css/variant.css?1696837586" rel="stylesheet">
+    <link href="/css/print.css?1696837586" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1696837586" rel="stylesheet">
+    <script src="/js/url.js?1696837586"></script>
+    <script src="/js/variant.js?1696837586"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='https:\/\/example.org/';
+      window.variants && variants.init( [ 'pink' ] );
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/apuntes/markdown/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)">
+                <i class="fa-fw fas fa-list-alt"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-encabezados">1. Encabezados</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#encabezado-2">Encabezado 2</a>
+      <ul>
+        <li><a href="#encabezado-3">Encabezado 3</a></li>
+        <li><a href="#2-parrafos">2. Parrafos</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-enfasis">3. Enfasis</a>
+      <ul>
+        <li><a href="#4-listas">4. Listas</a></li>
+        <li><a href="#5-enlaces">5. Enlaces</a></li>
+        <li><a href="#6-imagenes">6. Imagenes</a></li>
+        <li><a href="#7-citas">7. Citas</a></li>
+        <li><a href="#8-codigo">8. Codigo</a></li>
+        <li><a href="#9-reglas-horizontales">9. Reglas Horizontales</a></li>
+        <li><a href="#10-tablas">10. Tablas</a></li>
+        <li><a href="#11-tachado">11. Tachado</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">My New Hugo Site</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/apuntes/index.html"><span itemprop="name">Apuntes</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Markdown</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+              <a class="topbar-control" href="/apuntes/insthugo/index.html" title="Hugo (🡐)">
+                <i class="fa-fw fas fa-chevron-left"></i>
+              </a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+              <a class="topbar-control" href="/apuntes/shortcodes/index.html" title="Shortcodes (🡒)">
+                <i class="fa-fw fas fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More">
+                <i class="fa-fw fas fa-ellipsis-v"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="markdown">Markdown</h1>
+
+<p>En este apartado vamos a ver toda la sintaxsis que tiene Markdown, para poder explotarla y utilizarla al maximo 😃.</p>
+<h3 id="1-encabezados">1. Encabezados</h3>
+<p>Se pueden crear encabezados utilizando el símbolo #. Cuantos más # uses, más pequeño será el encabezado.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># Encabezado 1</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## Encabezado 2</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Encabezado 3</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#### Encabezado 4</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### Encabezado 5</span>
+</span></span><span class="line"><span class="cl"><span class="c1">###### Encabezado 6</span></span></span></code></pre></div>
+<p>Aqui un ejemplo de como se verian:</p>
+<h1 id="encabezado-1">Encabezado 1</h1>
+<h2 id="encabezado-2">Encabezado 2</h2>
+<h3 id="encabezado-3">Encabezado 3</h3>
+<h4 id="encabezado-4">Encabezado 4</h4>
+<h5 id="encabezado-5">Encabezado 5</h5>
+<h6 id="encabezado-6">Encabezado 6</h6>
+<h3 id="2-parrafos">2. Parrafos</h3>
+<p>Los párrafos se crean simplemente escribiendo texto. Markdown trata automáticamente los saltos de línea como un nuevo párrafo.</p>
+<p>Aqui va un ejemplo:</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">Esto</span> <span class="n">es</span> <span class="n">un</span> <span class="n">párrafo</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Esto</span> <span class="n">es</span> <span class="n">otro</span> <span class="n">párrafo</span><span class="o">.</span></span></span></code></pre></div>
+<h2 id="3-enfasis">3. Enfasis</h2>
+<p>Puedes hacer que el texto se vea en cursiva o en negrita utilizando asteriscos * o guiones bajos _.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="o">*</span><span class="n">Texto</span> <span class="n">en</span> <span class="n">cursiva</span><span class="o">*</span>
+</span></span><span class="line"><span class="cl"><span class="n">_Texto</span> <span class="n">en</span> <span class="n">cursiva_</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">**</span><span class="n">Texto</span> <span class="n">en</span> <span class="n">negrita</span><span class="o">**</span>
+</span></span><span class="line"><span class="cl"><span class="n">__Texto</span> <span class="n">en</span> <span class="n">negrita__</span></span></span></code></pre></div>
+<p>Aqui va un ejemplo de como se veria:</p>
+<p><em>Texto en cursiva</em></p>
+<p><em>Texto en cursiva</em></p>
+<p><strong>Texto en negrita</strong></p>
+<p><strong>Texto en negrita</strong></p>
+<h3 id="4-listas">4. Listas</h3>
+<p>Se pueden crear listas tanto ordenadas como no ordenadas.</p>
+<h5 id="listas-no-ordenadas">Listas no ordenadas</h5>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="o">-</span> <span class="n">Elemento</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="n">Elemento</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">  <span class="o">-</span> <span class="n">Subelemento</span> <span class="mf">2.1</span>
+</span></span><span class="line"><span class="cl">  <span class="o">-</span> <span class="n">Subelemento</span> <span class="mf">2.2</span>
+</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="n">Elemento</span> <span class="mi">3</span></span></span></code></pre></div>
+<p>Aqui va un ejemplo:</p>
+<ul>
+<li>Elemento 1</li>
+<li>Elemento 2
+<ul>
+<li>Subelemento 2.1</li>
+<li>Subelemento 2.2</li>
+</ul>
+</li>
+<li>Elemento 3</li>
+</ul>
+<h5 id="listas-ordenadas">Listas ordenadas</h5>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="mf">1.</span> <span class="n">Primer</span> <span class="n">elemento</span>
+</span></span><span class="line"><span class="cl"><span class="mf">2.</span> <span class="n">Segundo</span> <span class="n">elemento</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.</span> <span class="n">Tercer</span> <span class="n">elemento</span></span></span></code></pre></div>
+<p>Aqui va un ejemplo:</p>
+<ol>
+<li>Primer elemento</li>
+<li>Segundo elemento</li>
+<li>Tercer elemento</li>
+</ol>
+<h3 id="5-enlaces">5. Enlaces</h3>
+<p>Para crear enlaces se haria de esta manera:</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="p">[</span><span class="n">texto</span> <span class="k">del</span> <span class="n">enlace</span><span class="p">](</span><span class="n">URL</span><span class="p">)</span></span></span></code></pre></div>
+<p>Por ejemplo:</p>
+<p><a href="https://google.com" target="_blank">Google</a></p>
+<h3 id="6-imagenes">6. Imagenes</h3>
+<p>Para incluir imagenes se haria de esta manera:</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="err">!</span><span class="p">[</span><span class="n">texto</span> <span class="n">alternativo</span><span class="p">](</span><span class="n">URL</span> <span class="n">de</span> <span class="n">la</span> <span class="n">imagen</span><span class="p">)</span></span></span></code></pre></div>
+<p>Por ejemplo:</p>
+<p><a href="#R-image-3adc7ee1c20b8b02ec3e5148661dc8b2" class="lightbox-link"><img src="https://markdown-here.com/img/icon256.png" alt="Logo de Markdown" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3adc7ee1c20b8b02ec3e5148661dc8b2"><img src="https://markdown-here.com/img/icon256.png" alt="Logo de Markdown" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<h3 id="7-citas">7. Citas</h3>
+<p>Para crear citas se utilizaria el simbolo &lsquo;&gt;&rsquo; al principio de una linea.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="n">Esto</span> <span class="n">es</span> <span class="n">una</span> <span class="n">cita</span></span></span></code></pre></div>
+<p>Aqui va un ejemplo:</p>
+<blockquote>
+<p>Esto es una cita</p>
+</blockquote>
+<h3 id="8-codigo">8. Codigo</h3>
+<p>Se puede formatear texto como codigo utilizando comillas simples ` o triples ```</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">Inline</span> <span class="n">code</span><span class="p">:</span> <span class="err">`</span><span class="n">codigo</span><span class="err">`</span></span></span></code></pre></div>
+<p>Aqui va un ejemplo:</p>
+<p>Inline code: <code>codigo</code></p>
+<p>Y asi seria con comillas triples:</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="err">```</span><span class="n">python</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">funcion</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hola, mundo!&#34;</span><span class="p">)</span></span></span></code></pre></div>
+<p>Aqui un ejemplo:</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">funcion</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hola, mundo!&#34;</span><span class="p">)</span></span></span></code></pre></div><h3 id="9-reglas-horizontales">9. Reglas Horizontales</h3>
+<p>Se pueden crear reglas horizontales utilizando tres o más guiones, asteriscos o guiones bajos en una línea.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="o">---</span></span></span></code></pre></div>
+<p>Por ejemplo:</p>
+<hr>
+<h3 id="10-tablas">10. Tablas</h3>
+<p>crear tablas en Markdown utilizando barras verticales (|) para separar las celdas y guiones (-) para indicar las filas de encabezado. Aquí tienes un ejemplo de cómo crear una tabla simple:</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="o">|</span> <span class="n">Encabezado</span> <span class="mi">1</span> <span class="o">|</span> <span class="n">Encabezado</span> <span class="mi">2</span> <span class="o">|</span> <span class="n">Encabezado</span> <span class="mi">3</span> <span class="o">|</span>
+</span></span><span class="line"><span class="cl"><span class="o">|</span> <span class="o">------------</span> <span class="o">|</span> <span class="o">------------</span> <span class="o">|</span> <span class="o">------------</span> <span class="o">|</span>
+</span></span><span class="line"><span class="cl"><span class="o">|</span> <span class="n">Celda</span> <span class="mi">1</span><span class="p">,</span><span class="mi">1</span>    <span class="o">|</span> <span class="n">Celda</span> <span class="mi">1</span><span class="p">,</span><span class="mi">2</span>    <span class="o">|</span> <span class="n">Celda</span> <span class="mi">1</span><span class="p">,</span><span class="mi">3</span>    <span class="o">|</span>
+</span></span><span class="line"><span class="cl"><span class="o">|</span> <span class="n">Celda</span> <span class="mi">2</span><span class="p">,</span><span class="mi">1</span>    <span class="o">|</span> <span class="n">Celda</span> <span class="mi">2</span><span class="p">,</span><span class="mi">2</span>    <span class="o">|</span> <span class="n">Celda</span> <span class="mi">2</span><span class="p">,</span><span class="mi">3</span>    <span class="o">|</span></span></span></code></pre></div>
+<p>Aqui un ejemplo de como se veria una tabla:</p>
+<table>
+<thead>
+<tr>
+<th>Encabezado 1</th>
+<th>Encabezado 2</th>
+<th>Encabezado 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Celda 1,1</td>
+<td>Celda 1,2</td>
+<td>Celda 1,3</td>
+</tr>
+<tr>
+<td>Celda 2,1</td>
+<td>Celda 2,2</td>
+<td>Celda 2,3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="11-tachado">11. Tachado</h3>
+<p>Para tachar texto en Markdown, puedes utilizar el doble símbolo de tilde (~~) alrededor del texto que deseas tachar.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">Este</span> <span class="n">es</span> <span class="n">un</span> <span class="n">texto</span> <span class="o">~~</span><span class="n">tachado</span><span class="o">~~.</span></span></span></code></pre></div>
+<p>Asi se veria:</p>
+<p>Este es un texto <del>tachado</del>.</p>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+
+<a id="logo"
+href="/"
+style="
+  color: #3d414d;
+  font-family: 'Novacento Sans Wide', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: -2px;
+">
+    <img src="/images/logo.png" alt="Logo del ciclo">
+Desarrollo Web
+</a>
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="R-section-">Search</label>
+          <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1696837586" defer></script>
+        <script src="/js/lunr/lunr.min.js?1696837586" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1696837586" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1696837586" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1696837586" defer></script>
+        <script src="/js/search.js?1696837586" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/personal/index.html" class=""><a class="padding" href="/personal/index.html">Personal</a></li>
+          <li data-nav-id="/apuntes/index.html" class="parent "><a class="padding" href="/apuntes/index.html">Apuntes</a><ul id="R-subsections-976f895a2c6d25df425b227cf76f9693" class="morespace collapsible-menu">
+          <li data-nav-id="/apuntes/hosts/index.html" class=""><a class="padding" href="/apuntes/hosts/index.html">Hosts Virtuales</a></li>
+          <li data-nav-id="/apuntes/insthugo/index.html" class=""><a class="padding" href="/apuntes/insthugo/index.html">Hugo</a></li>
+          <li data-nav-id="/apuntes/markdown/index.html" class="active"><a class="padding" href="/apuntes/markdown/index.html">Markdown</a></li>
+          <li data-nav-id="/apuntes/shortcodes/index.html" class=""><a class="padding" href="/apuntes/shortcodes/index.html">Shortcodes</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://es.linkedin.com/in/guillermo-ib%C3%A1%C3%B1ez-l%C3%A1zaro-792b79204"><i class='fab fa-linkedin'></i>   Linkedin</a></li>
+            <li><a class="padding" href="https://cornhub.website"><i class='fas fa-fire'></i>  Maiz</a></li>
+            <li><a class="padding" href="http://manuel.infenlaces.com/dwes/ejercicios/"><i class='far fa-question-circle'></i>   Ejercicios resueltos</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-pink" value="pink" selected>Pink</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1696837586" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1696837586" defer></script>
+    <script src="/js/theme.js?1696837586" defer></script>
+  </body>
+</html>
