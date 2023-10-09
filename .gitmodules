@@ -1,4 +1,4 @@
 [submodule "relearn"]
-	path = themes/relearn
+	path = relearn
 	url = https://github.com/McShelby/hugo-theme-relearn
 
