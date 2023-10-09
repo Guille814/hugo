@@ -21,12 +21,12 @@ draft = false
     # - remove `noClasses` or set `noClasses = true`
     # - set `style` to a predefined style name
     noClasses = false
-    # style = "tango"
+    style = "dracula"
 
     [markup.goldmark.renderer]
     unsafe = true
 
-[params]
-  themeVariant = "dracula"
+#[params]
+ # themeVariant = "dracula"
 
 
