@@ -1,7 +1,7 @@
 baseURL = 'https://guille814.github.io/hugo'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-theme = "themes/relearn"
+theme = "relearn"
 draft = false
 
 [markup]

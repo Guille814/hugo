@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/personal/index.html</loc>
+    <loc>https://guille814.github.io/hugo/personal/index.html</loc>
     <lastmod>2023-09-25T10:06:20+02:00</lastmod>
   </url>
   <url>
-    <loc>https://example.org/apuntes/index.html</loc>
+    <loc>https://guille814.github.io/hugo/apuntes/index.html</loc>
     <lastmod>2023-09-25T10:08:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://example.org/apuntes/hosts/index.html</loc>
+    <loc>https://guille814.github.io/hugo/apuntes/hosts/index.html</loc>
     <lastmod>2023-09-25T10:08:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://example.org/apuntes/insthugo/index.html</loc>
+    <loc>https://guille814.github.io/hugo/apuntes/insthugo/index.html</loc>
     <lastmod>2023-09-25T10:08:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://example.org/apuntes/markdown/index.html</loc>
+    <loc>https://guille814.github.io/hugo/apuntes/markdown/index.html</loc>
     <lastmod>2023-09-25T10:08:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://example.org/index.html</loc>
+    <loc>https://guille814.github.io/hugo/index.html</loc>
     <lastmod>2023-09-25T10:08:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://example.org/apuntes/shortcodes/index.html</loc>
+    <loc>https://guille814.github.io/hugo/apuntes/shortcodes/index.html</loc>
     <lastmod>2023-09-25T10:08:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://example.org/categories/index.html</loc>
+    <loc>https://guille814.github.io/hugo/categories/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/tags/index.html</loc>
+    <loc>https://guille814.github.io/hugo/tags/index.html</loc>
   </url>
 </urlset>
