@@ -27,6 +27,6 @@ draft = false
     unsafe = true
 
 [params]
-  themeVariant = "pink"
+  themeVariant = "dracula"
 
 
